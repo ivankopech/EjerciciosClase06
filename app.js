@@ -72,9 +72,8 @@ for(var i = 0; i <= fruta.length ; i++)
 //f Recorrer el array utilizando el bucle for y mostrar cada uno de los valores
 // convirtiéndolos a mayúsculas (método toUpperCase de la clase String).
 
-for(var i=0; i <= fruta.length - 1; i++)
-{
-    console.log(fruta[i].toUpperCase());
+for(const element of fruta) {
+    console.log(element.toUpperCase());
 }
 
 //4 Crear una variable que contenga el valor 'La Manzana es Verde' y utilizarlo para:
@@ -99,5 +98,18 @@ console.log('El caracter 3 es: ' + caracter3 + ', el caracter 4 es: ' + caracter
 var arr;
 arr = manzanaVerde.split(',');
 console.log(arr);
+
+//5.- Crear una función que reciba como parámetro un string y que devuelva ese mismo
+//string con la primera letra convertida a mayúscula.
+var textoEj5;
+textoEj5 = 'programar';
+
+function aMayuscula(textoEj5)
+{
+    return textoEj5.split(' ').map(e => e[0].toUpperCase() + e.slice(1)).join(' ');
+}
+console.log(aMayuscula(textoEj5));
+
+
 
 
