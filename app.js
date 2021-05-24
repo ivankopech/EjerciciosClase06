@@ -122,4 +122,22 @@ function cadaPalabraMayuscula(cadaPalabra){
 console.log(cadaPalabraMayuscula(cadaPalabra));
 
 
+//7 Crear una función que reciba como parámetro un string y que devuelva la cantidad
+//de vocales que posee.
+var word;
+
+word = 'Murcielago';
+function contarVocales(texto) {
+    var contadorVocales = 0;
+    var vocales =  ["a", "e" , "i", "o", "u", "A", "E", "I", "O", "U"];
+    for(var i = 0; i < word.length; ++i){
+        if(vocales.indexOf(word[i]) >= 0){
+            ++contadorVocales;
+        }     
+    }
+    return contadorVocales;
+}
+console.log(contarVocales(word));
+
+
 
