@@ -72,7 +72,7 @@ for(var i = 0; i <= fruta.length ; i++)
 //f Recorrer el array utilizando el bucle for y mostrar cada uno de los valores
 // convirtiéndolos a mayúsculas (método toUpperCase de la clase String).
 
-for(const element of fruta) {
+for(var element of fruta) {
     console.log(element.toUpperCase());
 }
 
@@ -110,6 +110,16 @@ function aMayuscula(textoEj5)
 }
 console.log(aMayuscula(textoEj5));
 
+
+//6 Crear una función que reciba como parámetro un string y que devuelva ese mismo
+//string con la primera letra DE CADA PALABRA convertida a mayúscula.
+var cadaPalabra;
+cadaPalabra = 'mi nombre es ivan';
+function cadaPalabraMayuscula(cadaPalabra){
+    return cadaPalabra.split(' ').map( e => e[0].toUpperCase() + e.slice(1)).join(' ')
+
+}
+console.log(cadaPalabraMayuscula(cadaPalabra));
 
 
 
