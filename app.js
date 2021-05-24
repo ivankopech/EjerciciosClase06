@@ -76,3 +76,28 @@ for(var i=0; i <= fruta.length - 1; i++)
 {
     console.log(fruta[i].toUpperCase());
 }
+
+//4 Crear una variable que contenga el valor 'La Manzana es Verde' y utilizarlo para:
+var manzanaVerde = 'La Manzana es Verde';
+
+// a Convertirlo a minúscula y mostrar el resultado (método toLowerCase).
+console.log(manzanaVerde.toLowerCase());
+
+//b Obtener los últimos 4 caracteres del string (método substring).
+var ultimos4;
+
+ultimos4 = manzanaVerde.substring(15,19);
+console.log(ultimos4);
+//c Obtener los caracteres 3, 4 y 5 del string (método substring).
+var caracter3, caracter4, caracter5;
+caracter3 = manzanaVerde.charAt(3);
+caracter4 = manzanaVerde.charAt(4);
+caracter5 = manzanaVerde.charAt(5);
+console.log('El caracter 3 es: ' + caracter3 + ', el caracter 4 es: ' + caracter4 + ' y el caracter 5 es: ' + caracter5);
+//d Obtener un array con las palabras que hay en el string, asumiendo que cada
+//palabra termina cuando se encuentra el carácter espacio (método split).
+var arr;
+arr = manzanaVerde.split(',');
+console.log(arr);
+
+
